@@ -121,6 +121,13 @@ select {
 }
 
 /*main-btn*/
+.welcom:is([data-second]) {
+  background-image: url(../images/welcom/secong-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   padding-block: 15px;
 }
