@@ -101,6 +101,26 @@ select {
 }
 
 /* SHADOW*/
+/*main-btn*/
+.btn {
+  padding: 10px 47px;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-style {
+  background-color: hsl(7deg, 100%, 60%);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*main-btn*/
 .header {
   padding-block: 15px;
 }
@@ -126,4 +146,106 @@ select {
 .header .header__box .nav__group {
   display: flex;
   gap: 11px;
+}
+
+.welcom {
+  background-image: url(../images/welcom/Rectangle.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcom .welcom__box {
+  -webkit-padding-before: 50px;
+          padding-block-start: 50px;
+}
+.welcom .welcom__box .welcom__titel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+  -webkit-padding-after: 14px;
+          padding-block-end: 14px;
+}
+.welcom .welcom__box .welcom__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+  -webkit-padding-after: 22px;
+          padding-block-end: 22px;
+}
+.welcom .welcom__box .flex__grup {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.sponsors {
+  padding-block: 20px;
+  background-color: hsl(0deg, 0%, 0%);
+}
+
+.sponsors__box {
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+          mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+}
+
+.sponsors__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+  min-width: 100%;
+  -webkit-animation: scroll-x 30s linear infinite;
+          animation: scroll-x 30s linear infinite;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+}
+
+@-webkit-keyframes scroll-x {
+  from {
+    transform: translateX 0;
+  }
+  to {
+    transform: translateX(calc(-100% - 21px));
+  }
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX 0;
+  }
+  to {
+    transform: translateX(calc(-100% - 21px));
+  }
+}
+@-webkit-keyframes scroll-y {
+  from {
+    transform: translateY 0;
+  }
+  to {
+    transform: translateY calc(-100% - 21px);
+  }
+}
+@keyframes scroll-y {
+  from {
+    transform: translateY 0;
+  }
+  to {
+    transform: translateY calc(-100% - 21px);
+  }
 }/*# sourceMappingURL=style.css.map */
