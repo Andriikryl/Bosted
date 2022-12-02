@@ -1,0 +1,28 @@
+.header{
+    padding-block: 15px;
+    .header__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__nav{
+            .nav__list{
+                display: flex;
+                gap: 22px;
+                .nav__link{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+        }
+        .nav__group{
+            display: flex;
+            gap: 11px;
+        }
+    }
+}
