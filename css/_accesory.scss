@@ -1,0 +1,47 @@
+.accesory{
+    padding-block: 60px 100px;
+    .accesory__titel{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+        padding-block-end: 60px;
+    }
+    .card__box{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .product{
+            max-width: 186px;
+            .product__content{
+                padding-block-end: 12px;
+                .product__titel{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #FF4A32;    
+                    padding-block-end: 3px;                
+                }
+                .product__price{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #373737;
+
+                    span{
+                        color: #FF2121;
+                    }
+                }
+            }
+        }
+    }
+}

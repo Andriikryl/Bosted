@@ -130,6 +130,7 @@ select {
 
 .header {
   padding-block: 15px;
+  background-color: black;
 }
 .header .header__box {
   display: flex;
@@ -338,4 +339,54 @@ select {
   color: #000000;
   -webkit-padding-after: 18px;
           padding-block-end: 18px;
+}
+
+.accesory {
+  padding-block: 60px 100px;
+}
+.accesory .accesory__titel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
+}
+.accesory .card__box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.accesory .card__box .product {
+  max-width: 186px;
+}
+.accesory .card__box .product .product__content {
+  -webkit-padding-after: 12px;
+          padding-block-end: 12px;
+}
+.accesory .card__box .product .product__content .product__titel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FF4A32;
+  -webkit-padding-after: 3px;
+          padding-block-end: 3px;
+}
+.accesory .card__box .product .product__content .product__price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #373737;
+}
+.accesory .card__box .product .product__content .product__price span {
+  color: #FF2121;
 }/*# sourceMappingURL=style.css.map */
