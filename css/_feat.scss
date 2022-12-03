@@ -1,0 +1,72 @@
+.feat{
+    background-color: hsla(0, 0%, 0%, 1);
+    padding-block: 30px 50px;
+    .container{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        user-select: none;
+        mask-image: linear-gradient(
+          ( to right),
+          hsl(0 0% 0% / 0),
+          hsl(0 0% 0% / 1) 20%,
+          hsl(0 0% 0% / 1) 80%,
+          hsl(0 0% 0% / 0)
+        );
+    }
+    .feat__box{
+        flex-shrink: 0;
+        margin-inline-end: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        animation: scroll-x 30s linear infinite;
+
+        @keyframes scroll-x {
+            from {
+              transform: translateX (0);
+            }
+            to {
+              transform: translateX(calc(-100% - 21px));
+            }
+          }
+          
+          @keyframes scroll-y {
+            from {
+              transform: translateY (0);
+            }
+            to {
+              transform: translateY (calc(-100% - 21px)) ;
+            }
+          }
+          
+        .product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 270px;
+            .product__img{
+                padding-block-end: 5px;
+            }
+            .product__titel{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 31px;
+                line-height: 36px;
+                text-align: center;
+                color: #FFFFFF;        
+                padding-block-end: 25px;        
+            }
+            .product__text{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                color: #FFFFFF;                
+            }
+        }
+    }
+}

@@ -130,7 +130,6 @@ select {
 
 .header {
   padding-block: 15px;
-  background-color: black;
 }
 .header .header__box {
   display: flex;
@@ -389,4 +388,76 @@ select {
 }
 .accesory .card__box .product .product__content .product__price span {
   color: #FF2121;
+}
+
+.feat {
+  background-color: hsl(0deg, 0%, 0%);
+  padding-block: 30px 50px;
+}
+.feat .container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+          mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+}
+.feat .feat__box {
+  flex-shrink: 0;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  -webkit-animation: scroll-x 30s linear infinite;
+          animation: scroll-x 30s linear infinite;
+}
+@keyframes scroll-x {
+  from {
+    transform: translateX 0;
+  }
+  to {
+    transform: translateX(calc(-100% - 21px));
+  }
+}
+@keyframes scroll-y {
+  from {
+    transform: translateY 0;
+  }
+  to {
+    transform: translateY calc(-100% - 21px);
+  }
+}
+.feat .feat__box .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 270px;
+}
+.feat .feat__box .product .product__img {
+  -webkit-padding-after: 5px;
+          padding-block-end: 5px;
+}
+.feat .feat__box .product .product__titel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-padding-after: 25px;
+          padding-block-end: 25px;
+}
+.feat .feat__box .product .product__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
